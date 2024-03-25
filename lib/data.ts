@@ -40,22 +40,22 @@ export const heroCardData = [
 
 export const mobileCard =[
     {
-      icon: CgGym,
+      
       heading: 'Personal Trainers',
       text: 'Get yourself a personal trainer at an affordable fee.'
     },
     {
-      icon: CgGym,
+      
       heading: 'Meal Plans',
       text: 'Get a custom meal plan that fits your fitness goals.'
     },
     {
-      icon: CgGym,
+      
       heading: 'Custom Plans',
       text: 'We have plans for shedding weight, building muscle, and maintenance.'
     },
     {
-      icon: CgGym,
+      
       heading: 'Free Consultation',
       text: `Don't be shy. Ask questions and get answers at $free.99`
     }
