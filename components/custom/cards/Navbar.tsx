@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
+
 import { Button } from '@/components/ui/button'
+import { SignUpButton, SignInButton } from "@clerk/nextjs";
 
 
 export default function Navbar() {
@@ -10,8 +11,14 @@ export default function Navbar() {
             MISULI
         </div>
         <div className='flex gap-x-4'>
-            <Button className='bg-white text-primary hover:text-white border border-primary'>LOGIN</Button>
+          <SignInButton>
+          <Button className='bg-white text-primary hover:text-white border border-primary'>LOGIN</Button> 
+          </SignInButton>
+            
+            <SignUpButton>
             <Button>REGISTER</Button>
+            </SignUpButton>
+            
         </div>
     </div>
   )
