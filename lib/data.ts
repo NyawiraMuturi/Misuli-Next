@@ -60,3 +60,35 @@ export const mobileCard =[
       text: `Don't be shy. Ask questions and get answers at $free.99`
     }
   ]
+
+
+export const activityData = [
+  {
+    heading: 'Calories',
+    icon: '/fire.png',
+    color: '',
+    cardimg: '/frequency.png',
+    stats:''
+  },
+  {
+    heading: 'Heart Rate',
+    icon: '/heart.png',
+    color: '',
+    cardimg: '/pulse.png',
+    stats:''
+  },
+  {
+    heading: 'Steps',
+    icon: '/walk.png',
+    color: '',
+    cardimg: '',
+    stats:''
+  },
+  {
+    heading: 'Sleep',
+    icon: '/moon.png',
+    color: '',
+    cardimg: '/yellow.png',
+    stats:''
+  },
+]
