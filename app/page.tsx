@@ -5,10 +5,10 @@ import Navbar from "@/components/custom/cards/Navbar";
 
 export default function Home() {
   return (
-    <div >
+    <div className="bg-gradient-to-r from-[#05071D] from-60% to-[#ff2357] h-screen" >
       <Navbar />
-      <div className="flex flex-row justify-between">
-        <div>
+      <div className="flex flex-row justify-between p-4">
+        <div className="text-white">
           <p>WORK HARD</p>
           <h3>GET YOUR BODY MOVING</h3>
           <p>Leave the comfort zone and get to know all of our programs personalized especially for you</p> <br />
@@ -25,7 +25,9 @@ export default function Home() {
           <div>
             <Image src='/hero.jpg' height={100} width={20} layout="responsive" alt="hero" />
             {heroCardData.map((card, index) => (
-              <HeroCard key={index} {...card}  />
+              <div key={index}>
+                <HeroCard {...card}/>
+              </div>
             ))}
           </div>
       </div>

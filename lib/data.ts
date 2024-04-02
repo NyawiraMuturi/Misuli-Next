@@ -21,19 +21,17 @@ export const sideNavData =[
 
 export const heroCardData = [
     {
+      icon:'/gym.png',
       heading: 'Hypertrophy training',
       description: 'Growth and strengthening',
-      
-      top: 150,
-      right: 150,
+
     },
 
     {
+      icon:'/shoe.png',
       heading: 'Morning cardio',
       description: 'Aerobics to lose weight',
       
-      top: 400,
-      right: 90,
     },
     
   ];
@@ -81,14 +79,14 @@ export const activityData = [
     heading: 'Steps',
     icon: '/walk.png',
     color: '',
-    cardimg: '',
+    cardimg: '/steps.png',
     stats:''
   },
   {
     heading: 'Sleep',
     icon: '/moon.png',
     color: '',
-    cardimg: '/yellow.png',
+    cardimg: '/sleep.png',
     stats:''
   },
 ]

@@ -7,8 +7,8 @@ import { SignUpButton, SignInButton } from "@clerk/nextjs";
 export default function Navbar() {
   return (
     <div className=' p-4 flex justify-between items-center '>
-        <div>
-            MISULI
+        <div className='text-white'>
+            <h1>MISULI</h1>
         </div>
         <div className='flex gap-x-4'>
           <SignInButton>

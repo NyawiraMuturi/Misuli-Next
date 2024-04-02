@@ -5,19 +5,20 @@ import { Card, CardDescription } from '@/components/ui/card';
 interface CardProps {
     heading: string;
     description: string;
-    // imageSrc: string; 
+    icon: string; 
 }
 
-const HeroCard: React.FC<CardProps> = ({ heading, description }) => {
+const HeroCard: React.FC<CardProps> = ({ heading, description, icon }) => {
     return (
         <Card>
             <div className='rounded-full'>
-                <Image src='/shoe.png' height={20} width={20} alt='icon'/>
+                <Image src={icon} height={20} width={20} alt='icon'/>
             </div>
             <div>
                 <CardDescription>
-                    <h1>{heading}</h1>
-                    <p>{description}</p>
+                    {heading}
+                    <br />
+                    {description}
                 </CardDescription>
             </div>
         </Card>

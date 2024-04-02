@@ -8,17 +8,17 @@ export const sidebarData = [
     {
         title: 'Analytics', 
         icon: '/analytics.png',
-        link: '/home/activity'
+        link: '/dashboard/analytics'
     }, 
 
     {
         title: 'Planner', 
         icon: '/exercise.png',
-        link: '/home/meal-plan'
+        link: '/dashboard/planner'
     }, 
     {
         title: 'Recipe', 
         icon: '/recipe.png',
-        link: '/home/meal-plan'
+        link: '/dashboard/recipe'
     }
 ]
