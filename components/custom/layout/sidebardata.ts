@@ -12,9 +12,9 @@ export const sidebarData = [
     }, 
 
     {
-        title: 'Planner', 
+        title: 'Exercises', 
         icon: '/exercise.png',
-        link: '/dashboard/planner'
+        link: '/dashboard/exercises'
     }, 
     {
         title: 'Recipe', 
