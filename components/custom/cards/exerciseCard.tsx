@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 const apiKey = process.env.API_KEY || '';
 const apiHost = 'exercisedb.p.rapidapi.com';
@@ -22,6 +22,8 @@ const apiHost = 'exercisedb.p.rapidapi.com';
 export default async function ExerciseCard() {
     const data = await getExercises()
     console.log(data)
+
+
 
   return (
     <div className="grid grid-cols-3 gap-4">

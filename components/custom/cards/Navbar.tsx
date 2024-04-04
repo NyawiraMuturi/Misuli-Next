@@ -6,9 +6,9 @@ import { SignUpButton, SignInButton } from "@clerk/nextjs";
 
 export default function Navbar() {
   return (
-    <div className=' p-4 flex justify-between items-center '>
+    <div className=' py-4 px-6 flex justify-between items-center '>
         <div className='text-white'>
-            <h1>MISULI</h1>
+            <h1 className='font-black text-4xl' >MISULI</h1>
         </div>
         <div className='flex gap-x-4'>
           <SignInButton>
@@ -18,7 +18,6 @@ export default function Navbar() {
             <SignUpButton>
             <Button>REGISTER</Button>
             </SignUpButton>
-            
         </div>
     </div>
   )

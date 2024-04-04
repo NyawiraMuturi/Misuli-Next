@@ -24,6 +24,8 @@ export const heroCardData = [
       icon:'/gym.png',
       heading: 'Hypertrophy training',
       description: 'Growth and strengthening',
+      top: -35,
+      left:20
 
     },
 
@@ -31,6 +33,8 @@ export const heroCardData = [
       icon:'/shoe.png',
       heading: 'Morning cardio',
       description: 'Aerobics to lose weight',
+      top: -20,
+      left:25
       
     },
     
