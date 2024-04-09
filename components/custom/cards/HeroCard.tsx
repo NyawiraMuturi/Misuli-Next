@@ -26,7 +26,7 @@ const HeroCard: React.FC<CardProps> = ({ heading, description, icon, top, left }
             <div>
                 <CardDescription>
                     <span className='text-white font-bold'>{heading}</span>
-                    <p className='text-white font-thin text-xs'>{description}</p>
+                    <span className='text-white font-thin text-xs'>{description}</span>
                 </CardDescription>
             </div>
         </Card>

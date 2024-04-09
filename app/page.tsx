@@ -9,15 +9,15 @@ export default function Home() {
       <Navbar />
       <div className="flex flex-row justify-between py-4 px-6 h-[90%]">
         <div className="text-white text-lg space-y-4 flex flex-col justify-center w-1/2">
-          <p className="font-extrabold text-lg text-[#FFC121]">WORK HARD</p>
+          <p className="font-extrabold text-lg text-[#FFDF8C]">WORK HARD</p>
           <h3 className="font-extrabold text-8xl">GET YOUR BODY MOVING</h3>
           <p className="font-thin text-xl">Leave the comfort zone and get to know all of <br /> our programs personalized especially for you</p> <br />
-          <p className="font-extrabold text-lg text-[#FFC121]">Follow Us on Our Socials</p>
+          <p className="font-extrabold text-lg text-[#FFDF8C]">Follow Us on Our Socials</p>
           <br />
           <div className="flex gap-x-4" >
-            <Image src='/fb.png' height={20} width={20} alt="socials" />
-            <Image src='/ig.png' height={20} width={20} alt="socials" />
-            <Image src='/x.png' height={20} width={20} alt="socials" />
+            <Image src='/fb.png' height={30} width={30} alt="socials" />
+            <Image src='/ig.png' height={30} width={30} alt="socials" />
+            <Image src='/x.png' height={30} width={30} alt="socials" />
           </div>
         </div>
 
