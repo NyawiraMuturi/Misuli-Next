@@ -1,10 +1,14 @@
 import ExerciseCard from '@/components/custom/cards/exerciseCard'
-import React from 'react'
+import Category from '@/components/custom/carousel/category'
+import { getExercises } from '@/lib/actions/actions'
 
-export default function Page() {
+export default async function Page() {
+  const exercise = await getExercises()
+  
   return (
     <div className='p-4'>
-      <ExerciseCard/>
+      <Category/>
+      <ExerciseCard data={exercise}/>
     </div>
   )
 }

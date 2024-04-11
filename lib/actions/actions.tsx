@@ -1,6 +1,7 @@
 const apiKey = process.env.API_KEY || '';
 const apiHost = 'exercisedb.p.rapidapi.com';
 
+
 async function fetchData(url:string, options = {}) {
     const defaultOptions = {
         method: 'GET',
@@ -35,6 +36,10 @@ export async function getBodyPart() {
     return await fetchData(url);
 }
 
+export async function getBodyPartbyId(bodyPart: string) {
+    const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`;
+    return await fetchData(url); 
+}
 
 
 
