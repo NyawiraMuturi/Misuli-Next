@@ -1,23 +1,46 @@
-export const sideNavData =[
-    {
-        title: 'Dashboard', 
-        icon: 'icon',
-        link: '/home'
-    }, 
+const apiKey = process.env.API_KEY || '';
+const apiHost = 'exercisedb.p.rapidapi.com';
 
-    {
-        title: 'Your Activity', 
-        icon: 'icon',
-        link: '/home/activity'
-    }, 
 
-    {
-        title: 'Get Recipes', 
-        icon: 'icon',
-        link: '/home/meal-plan'
+async function fetchData(url:string, options = {}) {
+    const defaultOptions = {
+        method: 'GET',
+        headers: {
+            'X-RapidAPI-Key': apiKey,
+            'X-RapidAPI-Host': apiHost
+        }
+    };
+
+    const finalOptions = { ...defaultOptions, ...options };
+    const response = await fetch(url, finalOptions);
+
+    if (!response.ok) {
+        throw new Error('Failed to fetch data');
     }
 
-]
+    return response.json();
+}
+
+export async function getExerciseById(id: string) {
+    const url = `https://exercisedb.p.rapidapi.com/exercises/exercise/${id}`;
+    return await fetchData(url);
+}
+
+export async function getExercises() {
+    const url = 'https://exercisedb.p.rapidapi.com/exercises';
+    return await fetchData(url);
+}
+
+export async function getBodyPart() {
+    const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPartList';
+    return await fetchData(url);
+}
+
+export async function getBodyPartbyId(bodyPart: string) {
+    const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`;
+    return await fetchData(url); 
+}
+
 
 export const heroCardData = [
     {

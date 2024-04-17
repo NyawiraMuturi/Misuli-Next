@@ -1,6 +1,6 @@
 import ExerciseCard from '@/components/custom/cards/exerciseCard';
 import Category from '@/components/custom/carousel/category';
-import { getBodyPartbyId } from '@/lib/actions/actions'
+import { getBodyPartbyId } from '@/lib/data'
 
 export default async function page({
     params: {bodyPart},
@@ -15,7 +15,7 @@ export default async function page({
       }
     
   return (
-    <div className='p-4'>
+    <div>
         <Category/>
         <ExerciseCard data={part}/>
     </div>

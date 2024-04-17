@@ -1,4 +1,4 @@
-import { getBodyPart } from "@/lib/actions/actions";
+import { getBodyPart } from "@/lib/data";
 import {
     Carousel,
     CarouselContent,

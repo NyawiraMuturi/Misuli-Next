@@ -1,4 +1,4 @@
-import {getExerciseById} from "@/lib/actions/actions"
+import {getExerciseById} from "@/lib/data"
 
 export default async function exerciseItem({
   params: { id },
@@ -13,6 +13,10 @@ export default async function exerciseItem({
     }
     
   return (
-    <div key={exercise.id}>{exercise.name}</div>
+    <div 
+    key={exercise.id}
+    >
+      {exercise.name}
+    </div>
   )
 }
